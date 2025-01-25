@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6931b691-ac06-463f-952a-57c4ffa18588" name="Changes" comment="git init">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Range/src/ru/academits/java/tugolukov/range/Range.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Range/src/ru/academits/java/tugolukov/range_main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6931b691-ac06-463f-952a-57c4ffa18588" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +59,7 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.ru.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Range" />
@@ -79,8 +74,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ru.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.Main" />
+      <module name="test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ru.Main" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
@@ -127,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737777733498</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Создание пакетов с классами Main и Range">
+      <option name="closed" value="true" />
+      <created>1737777815501</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737777815501</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,8 +153,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="git init" />
     <MESSAGE value="создание модуля Range" />
-    <option name="LAST_COMMIT_MESSAGE" value="создание модуля Range" />
+    <MESSAGE value="git init" />
+    <MESSAGE value="Создание пакетов с классами Main и Range" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создание пакетов с классами Main и Range" />
   </component>
 </project>
