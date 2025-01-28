@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6931b691-ac06-463f-952a-57c4ffa18588" name="Changes" comment="Задача Range часть 1">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="6931b691-ac06-463f-952a-57c4ffa18588" name="Changes" comment="Создание интерфейса Shapes">
+      <change afterPath="$PROJECT_DIR$/Shapes/src/ru/academits/java/tugolukov/shapes/Square.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +16,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -70,6 +71,11 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vtugo\IdeaProjects\AcademItSchoolOop" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.ru.academits.java.tugolukov.shapes_main.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -204,7 +210,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738070864219</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Создание модуля Shapes">
+      <option name="closed" value="true" />
+      <created>1738071664461</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738071664461</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Создание интерфейса Shapes">
+      <option name="closed" value="true" />
+      <created>1738073041374</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738073041374</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +247,8 @@
     <MESSAGE value="Задача Range часть 1" />
     <MESSAGE value="Задача Range часть 2" />
     <MESSAGE value="-" />
-    <option name="LAST_COMMIT_MESSAGE" value="-" />
+    <MESSAGE value="Создание модуля Shapes" />
+    <MESSAGE value="Создание интерфейса Shapes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создание интерфейса Shapes" />
   </component>
 </project>
