@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6931b691-ac06-463f-952a-57c4ffa18588" name="Changes" comment="Создание класса Circle">
-      <change afterPath="$PROJECT_DIR$/Shapes/src/ru/academits/java/tugolukov/shapes/Triangle.java" afterDir="false" />
+    <list default="true" id="6931b691-ac06-463f-952a-57c4ffa18588" name="Changes" comment="Создание класса Triangle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shapes/src/ru/academits/java/tugolukov/shapes_main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shapes/src/ru/academits/java/tugolukov/shapes_main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Range/src/ru/academits/java/tugolukov/range_main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Range/src/ru/academits/java/tugolukov/range_main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,26 +51,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main (1).executor": "Debug",
-    "Application.Main.executor": "Run",
-    "Application.ru.academits.java.tugolukov.range_main.Main.executor": "Run",
-    "Application.ru.academits.java.tugolukov.shapes_main.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/vtugo/IdeaProjects/AcademItSchoolOop",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.academits.java.tugolukov.range_main.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.academits.java.tugolukov.shapes_main.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/vtugo/IdeaProjects/AcademItSchoolOop&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vtugo\IdeaProjects\AcademItSchoolOop" />
@@ -251,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738075588600</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Создание класса Triangle">
+      <option name="closed" value="true" />
+      <created>1738076483574</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738076483574</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -277,6 +284,7 @@
     <MESSAGE value="Создание класса Square" />
     <MESSAGE value="Создание класса Rectangle" />
     <MESSAGE value="Создание класса Circle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создание класса Circle" />
+    <MESSAGE value="Создание класса Triangle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создание класса Triangle" />
   </component>
 </project>

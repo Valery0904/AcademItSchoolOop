@@ -1,6 +1,7 @@
 package ru.academits.java.tugolukov.range_main;
 
 import ru.academits.java.tugolukov.range.Range;
+
 import java.util.Scanner;
 
 public class Main {
@@ -8,26 +9,26 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите начало числового диапазона Range: ");
-        double rangeFrom = scanner.nextDouble();
+        double range1From = scanner.nextDouble();
 
         System.out.print("Введите конец числового диапазона Range: ");
-        double rangeTo = scanner.nextDouble();
+        double range1To = scanner.nextDouble();
 
         System.out.print("Введите начало числового диапазона Range: ");
-        double otherRangeFrom = scanner.nextDouble();
+        double range2From = scanner.nextDouble();
 
         System.out.print("Введите конец числового диапазона Range: ");
-        double otherRangeTo = scanner.nextDouble();
+        double range2To = scanner.nextDouble();
 
         System.out.print("Введите число которое хотите проверить: ");
         double number = scanner.nextDouble();
 
-        Range range = new Range(rangeFrom, rangeTo);
-        Range otherRange = new Range(otherRangeFrom, otherRangeTo);
+        Range range1 = new Range(range1From, range1To);
+        Range range2 = new Range(range2From, range2To);
 
-        System.out.printf("Длина числового диапазона от %.2f до %.2f = %.2f%n", range.getFrom(), range.getTo(), range.getLength());
+        System.out.printf("Длина числового диапазона от %.2f до %.2f = %.2f%n", range1.getFrom(), range1.getTo(), range1.getLength());
 
-        if (range.isInside(number)) {
+        if (range1.isInside(number)) {
             System.out.printf("Число %.2f принадлежит диапазону", number);
         } else {
             System.out.printf("Число %.2f не принадлежит диапазону", number);
@@ -35,25 +36,27 @@ public class Main {
 
         System.out.println();
 
-        Range intersection = range.getIntersection(otherRange);
-        System.out.println(intersection != null ?
-                "Пересечение: " + intersection.getFrom() + ", " + intersection.getTo() : "Нет пересечения");
+        Range intersection = range1.getIntersection(range2);
+        System.out.println(intersection != null
+                ? "Пересечение: " + intersection.getFrom() + ", " + intersection.getTo()
+                : "Нет пересечения");
 
-        Range[] rangeUnion = range.getUnion(otherRange);
-        System.out.println("Объедененный диапазон: ");
+        Range[] rangeUnion = range1.getUnion(range2);
+        System.out.println("Объединенный диапазон:");
 
-        for (Range r : rangeUnion) {
-            System.out.println("[" + r.getFrom() + ", " + r.getTo() + "]");
+        for (Range rangeNumber : rangeUnion) {
+            System.out.println("[" + rangeNumber.getFrom() + ", " + rangeNumber.getTo() + "]");
         }
 
-        Range[] rangeDifference = range.getDifference(otherRange);
-        if (rangeDifference.length == 0) {
-            System.out.println("У интревалов нет разности");
-        } else {
-            System.out.println("Разность: ");
+        Range[] rangeDifference = range1.getDifference(range2);
 
-            for (Range r : rangeDifference) {
-                System.out.println("[" + r.getFrom() + ", " + r.getTo() + "]");
+        if (rangeDifference.length == 0) {
+            System.out.println("У интервалов нет разности");
+        } else {
+            System.out.println("Разность:");
+
+            for (Range rangeNumber : rangeDifference) {
+                System.out.println("[" + rangeNumber.getFrom() + ", " + rangeNumber.getTo() + "]");
             }
         }
     }
