@@ -8,16 +8,16 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введите начало числового диапазона Range: ");
+        System.out.print("Введите начало числового диапазона Range1: ");
         double range1From = scanner.nextDouble();
 
-        System.out.print("Введите конец числового диапазона Range: ");
+        System.out.print("Введите конец числового диапазона Range1: ");
         double range1To = scanner.nextDouble();
 
-        System.out.print("Введите начало числового диапазона Range: ");
+        System.out.print("Введите начало числового диапазона Range2: ");
         double range2From = scanner.nextDouble();
 
-        System.out.print("Введите конец числового диапазона Range: ");
+        System.out.print("Введите конец числового диапазона Range2: ");
         double range2To = scanner.nextDouble();
 
         System.out.print("Введите число которое хотите проверить: ");
