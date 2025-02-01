@@ -30,12 +30,12 @@ public class Range {
     }
 
     public boolean isInside(double number) {
-        return number - from > 0 && number - to < 0;
+        return number >= from && number <= to;
     }
 
     public Range getIntersection(Range range) {
-        double maxFrom = Math.max(this.from, range.from);
-        double minTo = Math.min(this.to, range.to);
+        double maxFrom = Math.max(from, range.from);
+        double minTo = Math.min(to, range.to);
 
         if (maxFrom >= minTo) {
             return null;
@@ -44,35 +44,38 @@ public class Range {
         return new Range(maxFrom, minTo);
     }
 
-    public Range[] getUnion(Range otherRange) {
-        if (this.to < otherRange.from || this.from > otherRange.to) {
-            return new Range[]{this, otherRange};
+    public Range[] getUnion(Range range) {
+        if (to < range.from || from > range.to) {
+            return new Range[]{
+                    new Range(from, to),
+                    new Range(range.from, range.to)
+            };
         }
 
-        double minFrom = Math.min(this.from, otherRange.from);
-        double maxTo = Math.max(this.to, otherRange.to);
+        double minFrom = Math.min(from, range.from);
+        double maxTo = Math.max(to, range.to);
 
         return new Range[]{new Range(minFrom, maxTo)};
     }
 
-    public Range[] getDifference(Range otherRange) {
-        if (this.to <= otherRange.from || this.from >= otherRange.to) { // range2 не пересекается с range1
-            return new Range[]{this};
+    public Range[] getDifference(Range range) {
+        if (to <= range.from || from >= range.to) { // range2 не пересекается с range1
+            return new Range[]{new Range(from, to)};
         }
 
-        if (this.from < otherRange.from && this.to > otherRange.to) { // range2 внутри range1
-            return new Range[] {
-                    new Range(this.from, otherRange.from),
-                    new Range(otherRange.to, this.to)
+        if (from < range.from && to > range.to) { // range2 внутри range1
+            return new Range[]{
+                    new Range(from, range.from),
+                    new Range(range.to, to)
             };
         }
 
-        if (this.from < otherRange.from) {
-            return new Range[]{new Range(this.from, otherRange.from)}; // Начало range2 внутри range1
+        if (from < range.from) {
+            return new Range[]{new Range(from, range.from)}; // Начало range2 внутри range1
         }
 
-        if (this.to > otherRange.to) {
-            return new Range[]{new Range(otherRange.to, this.to)}; // Конец range2 внутри range1
+        if (to > range.to) {
+            return new Range[]{new Range(range.to, to)}; // Конец range2 внутри range1
         }
 
         return new Range[]{}; // Границы интервалов равны (range1 == range2)
