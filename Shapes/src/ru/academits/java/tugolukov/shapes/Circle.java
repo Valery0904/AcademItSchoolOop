@@ -1,5 +1,7 @@
 package ru.academits.java.tugolukov.shapes;
 
+import java.util.Objects;
+
 public class Circle implements Shapes {
     public double radius;
 
@@ -25,5 +27,24 @@ public class Circle implements Shapes {
     @Override
     public double getPerimeter() {
         return 2 * Math.PI * radius;
+    }
+
+    @Override
+    public String toString() {
+        return "Circle "
+                + "radius: " + radius + ", "
+                + "area: " + getArea() + ", "
+                + "perimeter: " + getPerimeter();
+    }
+
+    @Override
+    public boolean equals(Object circle) {
+        if (!(circle instanceof Circle otherCircle)) return false;
+        return Double.compare(radius, otherCircle.radius) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(radius);
     }
 }

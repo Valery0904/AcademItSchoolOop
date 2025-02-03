@@ -1,5 +1,7 @@
 package ru.academits.java.tugolukov.shapes;
 
+import java.util.Objects;
+
 public class Triangle implements Shapes {
     double x1;
     double x2;
@@ -46,5 +48,30 @@ public class Triangle implements Shapes {
         double cutCaLength = Math.sqrt(Math.pow(x1 - x3, 2) + Math.pow(y1 - y3, 2));
 
         return cutAbLength + cutBcLength + cutCaLength;
+    }
+
+    @Override
+    public String toString() {
+        return "Triangle "
+                + "height: " + getHeight() + ", "
+                + "width: " + getWidth() + ", "
+                + "area: " + getArea() + ", "
+                + "perimeter: " + getPerimeter();
+    }
+
+    @Override
+    public boolean equals(Object triangle) {
+        if (!(triangle instanceof Triangle otherTriangle)) {
+            return false;
+        }
+
+        return Double.compare(x1, otherTriangle.x1) == 0 && Double.compare(x2, otherTriangle.x2) == 0
+                && Double.compare(x3, otherTriangle.x3) == 0 && Double.compare(y1, otherTriangle.y1) == 0
+                && Double.compare(y2, otherTriangle.y2) == 0 && Double.compare(y3, otherTriangle.y3) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(x1, x2, x3, y1, y2, y3);
     }
 }
