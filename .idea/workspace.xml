@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6931b691-ac06-463f-952a-57c4ffa18588" name="Changes" comment="Задача Shapes ч.3" />
+    <list default="true" id="6931b691-ac06-463f-952a-57c4ffa18588" name="Changes" comment="-">
+      <change afterPath="$PROJECT_DIR$/Vector/src/ru/academits/java/tugolukov/vector/Vector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +58,7 @@
     "Application.Main.executor": "Run",
     "Application.ru.academits.java.tugolukov.range_main.Main.executor": "Run",
     "Application.ru.academits.java.tugolukov.shapes_main.Main.executor": "Debug",
+    "Application.ru.academits.java.tugolukov.vector_main.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -73,17 +78,10 @@
       <recent name="C:\Users\vtugo\IdeaProjects\AcademItSchoolOop" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ru.academits.java.tugolukov.shapes_main.Main">
+  <component name="RunManager" selected="Application.ru.academits.java.tugolukov.vector_main.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Range" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="AcademItSchoolOop" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,6 +119,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ru.academits.java.tugolukov.vector_main.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.academits.java.tugolukov.vector_main.Main" />
+      <module name="Vector" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.academits.java.tugolukov.vector_main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="test" />
       <method v="2">
@@ -134,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ru.academits.java.tugolukov.vector_main.Main" />
         <item itemvalue="Application.ru.academits.java.tugolukov.shapes_main.Main" />
         <item itemvalue="Application.ru.academits.java.tugolukov.range_main.Main" />
         <item itemvalue="Application.ru.Main" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -311,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738593491962</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="-">
+      <option name="closed" value="true" />
+      <created>1738593652780</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1738593652780</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -342,8 +361,8 @@
     <MESSAGE value="Небольние правки Main" />
     <MESSAGE value="Задача Shapes. Часть 2." />
     <MESSAGE value="Задача Shapes. Часть 2.&#10;Правки получения значений maxAreaShape, secondPerimeterShape" />
-    <MESSAGE value="-" />
     <MESSAGE value="Задача Shapes ч.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задача Shapes ч.3" />
+    <MESSAGE value="-" />
+    <option name="LAST_COMMIT_MESSAGE" value="-" />
   </component>
 </project>
