@@ -3,7 +3,7 @@ package ru.academits.java.tugolukov.shapes;
 import java.util.Objects;
 
 public class Square implements Shape {
-    public double sideLength;
+    private double sideLength;
 
     public Square(double sideLength) {
         this.sideLength = sideLength;
