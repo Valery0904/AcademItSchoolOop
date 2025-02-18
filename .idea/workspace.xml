@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6931b691-ac06-463f-952a-57c4ffa18588" name="Changes" comment="-">
-      <change afterPath="$PROJECT_DIR$/Vector/src/ru/academits/java/tugolukov/vector/Vector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="6931b691-ac06-463f-952a-57c4ffa18588" name="Changes" comment="7. hashCode - для практики нужно сделать без Objects.hash, Objects.hashCode">
+      <change afterPath="$PROJECT_DIR$/Shapes/src/ru/academits/java/tugolukov/shapes/AreaComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shapes/src/ru/academits/java/tugolukov/shapes/PerimeterComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shapes/src/ru/academits/java/tugolukov/shapes_main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shapes/src/ru/academits/java/tugolukov/shapes_main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
     "Application.Main (1).executor": "Debug",
     "Application.Main.executor": "Run",
     "Application.ru.academits.java.tugolukov.range_main.Main.executor": "Run",
-    "Application.ru.academits.java.tugolukov.shapes_main.Main.executor": "Debug",
+    "Application.ru.academits.java.tugolukov.shapes_main.Main.executor": "Run",
     "Application.ru.academits.java.tugolukov.vector_main.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -78,7 +79,7 @@
       <recent name="C:\Users\vtugo\IdeaProjects\AcademItSchoolOop" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ru.academits.java.tugolukov.vector_main.Main">
+  <component name="RunManager" selected="Application.ru.academits.java.tugolukov.shapes_main.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Range" />
@@ -145,8 +146,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ru.academits.java.tugolukov.vector_main.Main" />
         <item itemvalue="Application.ru.academits.java.tugolukov.shapes_main.Main" />
+        <item itemvalue="Application.ru.academits.java.tugolukov.vector_main.Main" />
         <item itemvalue="Application.ru.academits.java.tugolukov.range_main.Main" />
         <item itemvalue="Application.ru.Main" />
         <item itemvalue="Application.Main (1)" />
@@ -330,7 +331,47 @@
       <option name="project" value="LOCAL" />
       <updated>1738593652780</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="2. Интерфейс Shapes:&#10;- лишнее множественное число в имени&#10;- между функциями нужно ставить 1 пустую строку для читаемости.&#10;Нужно применить Ctrl+Alt+L">
+      <option name="closed" value="true" />
+      <created>1739885820763</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1739885820763</updated>
+    </task>
+    <task id="LOCAL-00023" summary="1. Для полей фигур лучше добавить геттеры.&#10;Также можно добавить сеттеры&#10;&#10;3. side - в имени не хватает слова &quot;длина&quot;">
+      <option name="closed" value="true" />
+      <created>1739886514854</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1739886514854</updated>
+    </task>
+    <task id="LOCAL-00024" summary="4. Triangle:&#10;- дублируется формула вычисления длины отрезка, нужно сделать вспомогательный метод&#10;- полям нужно указывать модификатор доступа&#10;- в конструкторе порядок аргументов лучше сделать по точкам, а не по оси координат">
+      <option name="closed" value="true" />
+      <created>1739887178253</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1739887178253</updated>
+    </task>
+    <task id="LOCAL-00025" summary="8. equals:&#10;- не нужно использовать Double.compare, здесь достаточно простого сравнения.&#10;Double.compare имеет более сложную логику и предназначен для использования в компараторах&#10;- правильнее делать не через instanceof, а через сравнение классов&#10;- не хватает проверки this&#10;- аргумент нужно назвать obj, т.к. это не обязательно окружность и т.д.">
+      <option name="closed" value="true" />
+      <created>1739888331295</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1739888331295</updated>
+    </task>
+    <task id="LOCAL-00026" summary="7. hashCode - для практики нужно сделать без Objects.hash, Objects.hashCode">
+      <option name="closed" value="true" />
+      <created>1739888913347</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1739888913347</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -363,6 +404,11 @@
     <MESSAGE value="Задача Shapes. Часть 2.&#10;Правки получения значений maxAreaShape, secondPerimeterShape" />
     <MESSAGE value="Задача Shapes ч.3" />
     <MESSAGE value="-" />
-    <option name="LAST_COMMIT_MESSAGE" value="-" />
+    <MESSAGE value="2. Интерфейс Shapes:&#10;- лишнее множественное число в имени&#10;- между функциями нужно ставить 1 пустую строку для читаемости.&#10;Нужно применить Ctrl+Alt+L" />
+    <MESSAGE value="1. Для полей фигур лучше добавить геттеры.&#10;Также можно добавить сеттеры&#10;&#10;3. side - в имени не хватает слова &quot;длина&quot;" />
+    <MESSAGE value="4. Triangle:&#10;- дублируется формула вычисления длины отрезка, нужно сделать вспомогательный метод&#10;- полям нужно указывать модификатор доступа&#10;- в конструкторе порядок аргументов лучше сделать по точкам, а не по оси координат" />
+    <MESSAGE value="8. equals:&#10;- не нужно использовать Double.compare, здесь достаточно простого сравнения.&#10;Double.compare имеет более сложную логику и предназначен для использования в компараторах&#10;- правильнее делать не через instanceof, а через сравнение классов&#10;- не хватает проверки this&#10;- аргумент нужно назвать obj, т.к. это не обязательно окружность и т.д." />
+    <MESSAGE value="7. hashCode - для практики нужно сделать без Objects.hash, Objects.hashCode" />
+    <option name="LAST_COMMIT_MESSAGE" value="7. hashCode - для практики нужно сделать без Objects.hash, Objects.hashCode" />
   </component>
 </project>

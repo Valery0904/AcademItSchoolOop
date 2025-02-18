@@ -1,12 +1,12 @@
 package ru.academits.java.tugolukov.shapes_main;
 
 import ru.academits.java.tugolukov.shapes.*;
+
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) {
-        Shapes[] shapes = {
+        Shape[] shapes = {
                 new Circle(5),
                 new Rectangle(4, 6),
                 new Triangle(1, 0, 3, 0, 2, 4),
@@ -17,25 +17,21 @@ public class Main {
                 new Square(8)
         };
 
-        Shapes maxAreaShape = getMaxAreaShape(shapes);
+        Shape maxAreaShape = getMaxAreaShape(shapes);
         System.out.println("Фигура с максимальной площадью: " + maxAreaShape.getArea());
 
-        Shapes secondPerimeterShape = getSecondPerimeterShape(shapes);
+        Shape secondPerimeterShape = getSecondPerimeterShape(shapes);
         System.out.println("Фигура со вторым по величине периметром: " + secondPerimeterShape.getPerimeter());
     }
 
-    public static Shapes getMaxAreaShape(Shapes[] shapes) {
-        Arrays.sort(shapes, Comparator
-                .comparing(Shapes::getArea)
-                .reversed());
+    public static Shape getMaxAreaShape(Shape[] shapes) {
+        Arrays.sort(shapes, new AreaComparator());
 
         return shapes[0];
     }
 
-    public static Shapes getSecondPerimeterShape(Shapes[] shapes) {
-        Arrays.sort(shapes, Comparator
-                .comparing(Shapes::getPerimeter)
-                .reversed());
+    public static Shape getSecondPerimeterShape(Shape[] shapes) {
+        Arrays.sort(shapes, new PerimeterComparator());
 
         return shapes[1];
     }
