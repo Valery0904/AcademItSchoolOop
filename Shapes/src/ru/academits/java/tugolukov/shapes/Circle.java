@@ -46,9 +46,18 @@ public class Circle implements Shape {
     }
 
     @Override
-    public boolean equals(Object circle) {
-        if (!(circle instanceof Circle otherCircle)) return false;
-        return Double.compare(radius, otherCircle.radius) == 0;
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+
+        if (obj == null || obj.getClass() != getClass()) {
+            return false;
+        }
+
+        Circle circle = (Circle) obj;
+
+        return radius == circle.radius;
     }
 
     @Override

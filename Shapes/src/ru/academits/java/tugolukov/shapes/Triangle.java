@@ -77,7 +77,7 @@ public class Triangle implements Shape {
         return Math.max(Math.max(y1, y2), y3) - Math.min(Math.min(y1, y2), y3);
     }
 
-    public double getDistance (double x1, double y1, double x2, double y2) {
+    public double getDistance(double x1, double y1, double x2, double y2) {
         return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     }
 
@@ -112,14 +112,20 @@ public class Triangle implements Shape {
     }
 
     @Override
-    public boolean equals(Object triangle) {
-        if (!(triangle instanceof Triangle otherTriangle)) {
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+
+        if (obj == null || obj.getClass() != getClass()) {
             return false;
         }
 
-        return Double.compare(x1, otherTriangle.x1) == 0 && Double.compare(x2, otherTriangle.x2) == 0
-                && Double.compare(x3, otherTriangle.x3) == 0 && Double.compare(y1, otherTriangle.y1) == 0
-                && Double.compare(y2, otherTriangle.y2) == 0 && Double.compare(y3, otherTriangle.y3) == 0;
+        Triangle triangle = (Triangle) obj; // Каст
+
+        return x1 == triangle.x1 && y1 == triangle.y1 &&
+                x2 == triangle.x2 && y2 == triangle.y2 &&
+                x3 == triangle.x3 && y3 == triangle.y3;
     }
 
     @Override

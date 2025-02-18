@@ -49,13 +49,18 @@ public class Rectangle implements Shape {
     }
 
     @Override
-    public boolean equals(Object rectangle) {
-        if (!(rectangle instanceof Rectangle otherRectangle)) {
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+
+        if (obj == null || obj.getClass() != getClass()) {
             return false;
         }
 
-        return Double.compare(height, otherRectangle.height) == 0
-                && Double.compare(width, otherRectangle.width) == 0;
+        Rectangle rectangle = (Rectangle) obj;
+
+        return height == rectangle.height && width == rectangle.width;
     }
 
     @Override
