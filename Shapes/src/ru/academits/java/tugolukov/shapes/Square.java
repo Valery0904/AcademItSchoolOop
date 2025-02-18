@@ -62,6 +62,11 @@ public class Square implements Shape {
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(sideLength);
+        final int prime = 37;
+        int hash = 1;
+
+        hash = prime * hash + Double.hashCode(sideLength);
+
+        return hash;
     }
 }
