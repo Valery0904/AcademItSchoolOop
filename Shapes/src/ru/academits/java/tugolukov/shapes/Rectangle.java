@@ -2,12 +2,20 @@ package ru.academits.java.tugolukov.shapes;
 
 import java.util.Objects;
 
-public class Rectangle implements Shapes {
+public class Rectangle implements Shape {
     public double height;
     public double width;
 
     public Rectangle(double height, double width) {
         this.height = height;
+        this.width = width;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public void setWidth(double width) {
         this.width = width;
     }
 

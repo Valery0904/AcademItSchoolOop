@@ -2,37 +2,45 @@ package ru.academits.java.tugolukov.shapes;
 
 import java.util.Objects;
 
-public class Square implements Shapes {
-    public double side;
+public class Square implements Shape {
+    public double sideLength;
 
-    public Square(double side) {
-        this.side = side;
+    public Square(double sideLength) {
+        this.sideLength = sideLength;
+    }
+
+    public double getSideLength() {
+        return sideLength;
+    }
+
+    public void setSideLength(double sideLength) {
+        this.sideLength = sideLength;
     }
 
     @Override
     public double getWidth() {
-        return side;
+        return sideLength;
     }
 
     @Override
     public double getHeight() {
-        return side;
+        return sideLength;
     }
 
     @Override
     public double getArea() {
-        return side * side;
+        return sideLength * sideLength;
     }
 
     @Override
     public double getPerimeter() {
-        return side * 4;
+        return sideLength * 4;
     }
 
     @Override
     public String toString() {
         return "Square "
-                + "side: " + side + ", "
+                + "side: " + sideLength + ", "
                 + "area: " + getArea() + ", "
                 + "perimeter: " + getPerimeter();
     }
@@ -43,11 +51,11 @@ public class Square implements Shapes {
             return false;
         }
 
-        return Double.compare(side, otherSquare.side) == 0;
+        return Double.compare(sideLength, otherSquare.sideLength) == 0;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(side);
+        return Objects.hashCode(sideLength);
     }
 }
