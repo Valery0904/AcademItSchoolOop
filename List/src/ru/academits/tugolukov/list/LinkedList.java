@@ -1,4 +1,4 @@
-package ru.academits.java.list;
+package ru.academits.tugolukov.list;
 
 public class LinkedList<T> {
     private Node<T> head;

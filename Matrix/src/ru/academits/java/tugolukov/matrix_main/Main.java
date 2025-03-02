@@ -1,7 +1,7 @@
-package tugolukov.matrix_main;
+package ru.academits.java.tugolukov.matrix_main;
 
-import tugolukov.matrix.Matrix;
-import tugolukov.matrix.Vector;
+import ru.academits.java.tugolukov.matrix.Matrix;
+import ru.academits.java.tugolukov.matrix.Vector;
 
 public class Main {
     public static void main(String[] args) {

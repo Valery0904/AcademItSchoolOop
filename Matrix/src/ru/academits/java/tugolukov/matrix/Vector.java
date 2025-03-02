@@ -1,4 +1,4 @@
-package tugolukov.matrix;
+package ru.academits.java.tugolukov.matrix;
 
 import java.util.Arrays;
 
