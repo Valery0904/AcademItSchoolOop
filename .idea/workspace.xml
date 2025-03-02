@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6931b691-ac06-463f-952a-57c4ffa18588" name="Changes" comment="Vector">
+    <list default="true" id="6931b691-ac06-463f-952a-57c4ffa18588" name="Changes" comment="Matrix">
+      <change afterPath="$PROJECT_DIR$/List/src/ru/academits/java/list/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/List/src/ru/academits/java/list/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Matrix/Matrix.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -55,6 +58,7 @@
   "keyToString": {
     "Application.Main (1).executor": "Debug",
     "Application.Main.executor": "Run",
+    "Application.ru.academits.java.list_main.Main.executor": "Run",
     "Application.ru.academits.java.tugolukov.range_main.Main.executor": "Run",
     "Application.ru.academits.java.tugolukov.shapes_main.Main.executor": "Run",
     "Application.ru.academits.java.tugolukov.vector_main.Main.executor": "Run",
@@ -65,7 +69,7 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/vtugo/IdeaProjects/education",
+    "last_opened_file_path": "C:/Users/vtugo/IdeaProjects/AcademItSchoolOop",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -77,7 +81,7 @@
       <recent name="C:\Users\vtugo\IdeaProjects\AcademItSchoolOop" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.ru.academits.java.list_main.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.academits.java.tugolukov.matrix_main.Main" />
       <module name="Matrix" />
@@ -91,9 +95,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ru.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.Main" />
-      <module name="test" />
+    <configuration name="ru.academits.java.list_main.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.academits.java.list_main.Main" />
+      <module name="List" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.academits.java.list_main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ru.academits.java.list_main.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.ru.academits.java.tugolukov.vector_main.Main" />
         <item itemvalue="Application.ru.academits.java.tugolukov.shapes_main.Main" />
         <item itemvalue="Application.ru.academits.java.tugolukov.range_main.Main" />
-        <item itemvalue="Application.ru.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -391,7 +401,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740886469792</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Matrix">
+      <option name="closed" value="true" />
+      <created>1740892722359</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1740892722359</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -406,7 +424,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="создание модуля Range" />
     <MESSAGE value="git init" />
     <MESSAGE value="Создание пакетов с классами Main и Range" />
     <MESSAGE value="Задача Range часть 1" />
@@ -431,6 +448,7 @@
     <MESSAGE value="7. hashCode - для практики нужно сделать без Objects.hash, Objects.hashCode" />
     <MESSAGE value="5. Для практики нужно обойтись без Comparator.comparing.&#10;Нужно сделать отдельные классы компараторов в отдельных файлах" />
     <MESSAGE value="Vector" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vector" />
+    <MESSAGE value="Matrix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Matrix" />
   </component>
 </project>
